@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    background-image: url(./img/concert.jpg);
+}
+
+.glassContainer {
+    width: 90%;
+    height: 80%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+}
+
+.title {
+    font-family: fantasy;
+    font-size: 70px;
+}
+
+.ingresso {
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.box--ingresso {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.chamativo {
+    font-size: small;
+}
+
+.comprar {
+    padding: 15px 20px;
+
+    font-size: 25px;
+
+    color: white;
+    background-color: rgba(137, 43, 226, 0.7);
+
+    cursor: pointer;
+    
+    border: none;
+    border-radius: 30px;
+
+    transition: 0.4s all;
+}
+
+.comprar:hover {
+    background-color: blueviolet;
+
+    transform: scale(1.1);
+
+    box-shadow: 0 0 1rem #666666;
+}
+
+.divider {
+    width: 90%;
+    height: 1px;
+
+    background-color: #666666;
+
+    box-shadow: 0 0 1rem white;
+}
+
+.atracoes {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    margin-bottom: 1rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.box--atracoes {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 90vw;
+}
+
+.participantes {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 80vh;
+
+    margin: 20px 0;
+}
+
+.container {
+    width: 30%;
+    height: 100%;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border: #666666 1px solid;
+}
+
+.container ul {
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.container li {
+    list-style: square;
+    margin: 0.7rem 3rem;
+}
+
+@media (max-width: 1000px) {
+    .participantes {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 90%;
+
+        margin-bottom: 30px;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+
+    justify-items: space-around;
+    align-items: center;
+
+    color: #666666;
+}
+
+.sociais a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.caio {
+    text-decoration: none;
+    color: darkmagenta;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 20px;
+}
